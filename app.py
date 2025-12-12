@@ -9,11 +9,11 @@ import re
 app = Flask(__name__)
 
 # ✅ Configure your Gemini API key
-GEMINI_API_KEY = "AIzaSyCK6jh1ejS0IvwOt61p6WsCMjuu92tZCQc"
+GEMINI_API_KEY = "AIzaSyAvfpIkqv75hEheVo644ncDmpZg4kkz9h4"
 genai.configure(api_key=GEMINI_API_KEY)
 
 # ✅ Choose the Gemini model
-model = genai.GenerativeModel("gemini-2.0-flash")
+model = genai.GenerativeModel("gemini-2.5-flash")
 
 @app.route("/")
 def home():
